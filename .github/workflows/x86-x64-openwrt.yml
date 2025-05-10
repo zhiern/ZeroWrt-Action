@@ -15,6 +15,11 @@ on:
   # watch:
   #   types: started
     inputs:
+      lan_addr:
+        description: 'Setting default LAN address'
+        required: true
+        default: '10.0.0.1'
+        type: string
       ccache:
         description: 'Enable ccache (Use Cache to speed up next build)'
         type: boolean
@@ -82,7 +87,7 @@ jobs:
         
     - name: Load Custom Configuration
       run: |
-        export ENABLE_CCACHE=y
+        [ ${{ github.event.inputs.ccache }} = 'true' ] && export BUILD_FAST=y
         [ -e files ] && mv files $OPENWRT_PATH/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE $OPENWRT_PATH/.config
         chmod +x $DIY_SCRIPT
