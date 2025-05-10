@@ -15,6 +15,14 @@ on:
   # watch:
   #   types: started
     inputs:
+      device:
+        description: 'Select the build device'
+        required: true
+        default: 'x86_64'
+        type: choice
+        options:
+          - 'x86_64'
+          - 'rockchip'
       lan_addr:
         description: 'Setting default LAN address'
         required: true
