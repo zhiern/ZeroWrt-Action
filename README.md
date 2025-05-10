@@ -137,6 +137,7 @@ emmc-install /tmp/xx-squashfs-sysupgrade.img.gz
 - [Lean's LEDE](https://github.com/coolsnowwolf/lede)
 - [ImmortalWrt](https://github.com/immortalwrt/immortalwrt)
 - [padavanonly的ImmortalWrt分支](https://github.com/padavanonly/immortalwrt-mt798x-24.10)
+- [sbwml的刷写教程](https://github.com/sbwml)
 
 ---
 
