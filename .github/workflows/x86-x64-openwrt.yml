@@ -53,6 +53,7 @@ jobs:
         rm -rf ./openwrt_snap/package/firmware ./openwrt_snap/package/kernel ./openwrt_snap/package/base-files ./openwrt_snap/package/Makefile
         cp -rf ./openwrt_snap/package/* ./openwrt/package/
         cp -rf ./openwrt_snap/feeds.conf.default ./openwrt/feeds.conf.default
+        rm -rf ./openwrt_snap
         cd openwrt
         echo "OPENWRT_PATH=$PWD" >> $GITHUB_ENV
         COMMIT_AUTHOR=$(git show -s --date=short --format="作者: %an")
