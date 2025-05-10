@@ -82,6 +82,7 @@ jobs:
         
     - name: Load Custom Configuration
       run: |
+        export ENABLE_CCACHE=y
         [ -e files ] && mv files $OPENWRT_PATH/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE $OPENWRT_PATH/.config
         chmod +x $DIY_SCRIPT
