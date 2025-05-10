@@ -36,8 +36,8 @@ on:
 env:
   REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: v24.10.1
-  CONFIG_FILE: configs/x86_64.config
-  DIY_SCRIPT: diy-x86_64.sh
+  CONFIG_FILE: configs/${{ github.event.inputs.device }}.config
+  DIY_SCRIPT: diy-${{ github.event.inputs.device }}.sh
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
