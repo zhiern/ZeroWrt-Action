@@ -92,7 +92,7 @@ jobs:
         ./scripts/feeds install -a
 
     - name: Add device support
-      if: ${{ github.event.inputs.device == 'rockchip' 
+      if: ${{ github.event.inputs.device == 'rockchip' }}
       run: |
         git clone -b v24.10.1 --single-branch --filter=blob:none https://github.com/immortalwrt/immortalwrt
         cd $OPENWRT_PATH
