@@ -53,7 +53,7 @@ sed -i 's/option timeout 30/option timeout 60/g' package/system/rpcd/files/rpcd.
 sed -i 's#20) \* 1000#60) \* 1000#g' feeds/luci/modules/luci-base/htdocs/luci-static/resources/rpc.js
 
 # 修改默认ip
-sed -i "s/192.168.1.1/10.0.0.1/g" package/base-files/files/bin/config_generate
+sed -i "s/192.168.1.1/$LAN/g" package/base-files/files/bin/config_generate
 
 # 修改名称
 sed -i 's/OpenWrt/ZeroWrt/' package/base-files/files/bin/config_generate
