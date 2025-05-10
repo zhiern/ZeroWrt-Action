@@ -33,7 +33,7 @@
 
 ---
 
-## ZeroWrt 固件烧写（SD）
+## 💾 ZeroWrt 固件烧写（SD）
 
 **推荐工具：**<a href="https://www.balena.io/etcher/" target="_blank" ><img style="height:25px;" src="https://git.kejizero.online/zhao/files/raw/branch/main/images/balena.svg" /></a>
 
@@ -43,9 +43,9 @@
 
 ------
 
-## 固件烧写
+## 🛠️ 固件烧写
 
-### 准备工具
+### 📦 准备工具
 
 - **电脑（Windows），其它操作系统自行搜索相关工具**
 - **数据线：USB-A to USB-A 或 Type-C to USB-A**
@@ -53,11 +53,11 @@
 
 - **Mask 设备驱动：**<a href="https://media.cooluc.com/%E8%BD%AF%E4%BB%B6/RKDevTool/DriverAssitant_v5.1.1.zip" target="_blank" >DriverAssitant_v5.1.1.zip</a>
 
-### 准备固件
+### 📥 准备固件
 
 - **下载固件文件，并解压出 .img**
 
-### 操作过程
+### 🚀 操作过程
 
 - **安装 Mask 设备驱动**
 
@@ -85,7 +85,7 @@
 
 ------
 
-## 固件烧写（SD to eMMC）
+## 📤 固件烧写（SD to eMMC）
 
 ```shell
 # 1、下载最新 Releases 固件并通过 SD 卡启动
