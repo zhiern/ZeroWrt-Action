@@ -37,10 +37,10 @@
 
 <div align="center">
 
-![示例图 1](https://git.kejizero.online/zhao/files/raw/branch/main/images/0001.png)  
-![示例图 2](https://git.kejizero.online/zhao/files/raw/branch/main/images/0002.png)  
-![示例图 3](https://git.kejizero.online/zhao/files/raw/branch/main/images/0003.png)  
-![示例图 4](https://git.kejizero.online/zhao/files/raw/branch/main/images/0004.png)
+![示例图 1](date/0001.png)  
+![示例图 2](date/0002.png)  
+![示例图 3](date/0003.png)  
+![示例图 4](date/0004.png)
 
 </div>
 
