@@ -99,9 +99,9 @@ jobs:
         rm -rf target/linux/rockchip
         cp -rf ../immortalwrt/target/linux/rockchip target/linux/rockchip
         pushd target/linux/rockchip/patches-6.6/
-            curl -Os $mirror/openwrt/patch/rockchip/014-rockchip-add-pwm-fan-controller-for-nanopi-r2s-r4s.patch
-            curl -Os $mirror/openwrt/patch/rockchip/702-general-rk3328-dtsi-trb-ent-quirk.patch
-            curl -Os $mirror/openwrt/patch/rockchip/703-rk3399-enable-dwc3-xhci-usb-trb-quirk.patch
+            curl -Os https://script.kejizero.online/openwrt/patch/rockchip/014-rockchip-add-pwm-fan-controller-for-nanopi-r2s-r4s.patch
+            curl -Os https://script.kejizero.online/openwrt/patch/rockchip/702-general-rk3328-dtsi-trb-ent-quirk.patch
+            curl -Os https://script.kejizero.online/openwrt/patch/rockchip/703-rk3399-enable-dwc3-xhci-usb-trb-quirk.patch
         popd
         rm -rf package/boot/{rkbin,uboot-rockchip,arm-trusted-firmware-rockchip}
         cp -rf ../immortalwrt/package/boot/uboot-rockchip package/boot/uboot-rockchip
