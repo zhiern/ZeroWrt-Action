@@ -131,13 +131,12 @@ emmc-install /tmp/xx-squashfs-sysupgrade.img.gz
 
 ---
 
-## 🏆 鸣谢来源
-
-- [OpenWrt 官方源码](https://github.com/openwrt/openwrt)
-- [Lean's LEDE](https://github.com/coolsnowwolf/lede)
-- [ImmortalWrt](https://github.com/immortalwrt/immortalwrt)
-- [padavanonly的ImmortalWrt分支](https://github.com/padavanonly/immortalwrt-mt798x-24.10)
-- [sbwml的刷写教程](https://github.com/sbwml)
+## 🏆 鸣谢 [![](https://img.shields.io/badge/-跪谢各大佬-FFFFFF.svg)](#鸣谢-)
+| [ImmortalWrt](https://github.com/immortalwrt) | [coolsnowwolf](https://github.com/coolsnowwolf) | [P3TERX](https://github.com/P3TERX) | [Flippy](https://github.com/unifreq) |
+| :-------------: | :-------------: | :-------------: | :-------------: |
+| <img width="100" src="https://avatars.githubusercontent.com/u/53193414"/> | <img width="100" src="https://avatars.githubusercontent.com/u/31687149"/> | <img width="100" src="https://avatars.githubusercontent.com/u/25927179"/> | <img width="100" src="https://avatars.githubusercontent.com/u/39355261"/> |
+| [sbwml](https://github.com/sbwml) | [SuLingGG](https://github.com/SuLingGG) | [QiuSimons](https://github.com/QiuSimons) | [padavanonly](https://github.com/padavanonly/immortalwrt-mt798x-24.10) |
+| <img width="100" src="https://avatars.githubusercontent.com/u/16485166?v=4"/> | <img width="100" src="https://avatars.githubusercontent.com/u/22287562"/> | <img width="100" src="https://avatars.githubusercontent.com/u/45143996"/> | <img width="100" src="https://avatars.githubusercontent.com/u/83120842?v=4"/> |
 
 ---
 
