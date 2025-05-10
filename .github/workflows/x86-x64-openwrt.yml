@@ -18,7 +18,7 @@ on:
       ccache:
         description: 'Enable ccache (Use Cache to speed up next build)'
         type: boolean
-        default: false
+        default: true
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
