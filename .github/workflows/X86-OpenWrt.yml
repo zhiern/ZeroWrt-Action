@@ -18,7 +18,7 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
-  REPO_BRANCH: openwrt-24.10
+  REPO_BRANCH: v24.10.1
   CONFIG_FILE: configs/x86_64.config
   DIY_SCRIPT: diy-x86_64.sh
   CACHE_TOOLCHAIN: true
