@@ -12,6 +12,9 @@ export gitea=https://git.kejizero.online
 # GitHub镜像
 export github="github.com"
 
+# 下载进度条
+CURL_BAR="--progress-bar"
+
 # 使用 O2 级别的优化
 sed -i 's/Os/O2/g' include/target.mk
 
@@ -436,6 +439,20 @@ rm -rf ./openwrt_snap/package/firmware ./openwrt_snap/package/kernel ./openwrt_s
 cp -rf ./openwrt_snap/package/* ./package/
 cp -rf ./openwrt_snap/feeds.conf.default ./feeds.conf.default
 
+# Toolchain Cache
+if [ "$BUILD_FAST" = "y" ]; then
+    TOOLCHAIN_URL=https://github.com/oppen321/openwrt_caches/releases/download/OpenWrt_Toolchain_Cache
+    curl -L -k ${TOOLCHAIN_URL}/toolchain_gcc13_x86_64.tar.zst -o toolchain.tar.zst $CURL_BAR
+    tar -I "zstd" -xf toolchain.tar.zst
+    rm -f toolchain.tar.zst
+    mkdir bin
+    find ./staging_dir/ -name '*' -exec touch {} \; >/dev/null 2>&1
+    find ./tmp/ -name '*' -exec touch {} \; >/dev/null 2>&1
+fi
+
+# init openwrt config
+rm -rf tmp/*
+     
 # install feeds
 ./scripts/feeds update -a
 ./scripts/feeds install -a
