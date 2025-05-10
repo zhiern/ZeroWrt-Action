@@ -33,6 +33,74 @@
 
 ---
 
+## ZeroWrt 固件烧写（SD）
+
+**推荐工具：**<a href="https://www.balena.io/etcher/" target="_blank" ><img style="height:25px;" src="https://git.kejizero.online/zhao/files/raw/branch/main/images/balena.svg" /></a>
+
+**SD卡容量：2GB 或更多**
+
+*固件文件无需解压，直接使用工具写入 microSD 卡*
+
+------
+
+## 固件烧写
+
+### 准备工具
+
+- **电脑（Windows），其它操作系统自行搜索相关工具**
+- **数据线：USB-A to USB-A 或 Type-C to USB-A**
+- **瑞芯微开发工具：**<a href="https://media.cooluc.com/%E8%BD%AF%E4%BB%B6/RKDevTool/RKDevTool_Release_v2.84.zip" target="_blank" >RKDevTool_Release_v2.84.zip</a>
+
+- **Mask 设备驱动：**<a href="https://media.cooluc.com/%E8%BD%AF%E4%BB%B6/RKDevTool/DriverAssitant_v5.1.1.zip" target="_blank" >DriverAssitant_v5.1.1.zip</a>
+
+### 准备固件
+
+- **下载固件文件，并解压出 .img**
+
+### 操作过程
+
+- **安装 Mask 设备驱动**
+
+- **Mask 模式连接电脑（R5S 断电状态下，取下 SD 卡，使用数据线连接电脑。长按 “Mask” 按钮，接通 R5S 电源直至电脑发现新设备后释放 “Mask” 按钮）**
+
+  <img style="height:100px;" src="https://git.kejizero.online/zhao/files/raw/branch/main/images/r5s_mask.webp" />
+
+
+
+- **打开 瑞芯微开发工具：正常状态：（发现一个Maskrom设备）  缺少驱动：（没有发现设备）**
+
+  **安装步骤：**
+  
+  **① 点击 “system” 路径选择按钮（选择 zip 解压出来的 IMG 文件）**
+  
+  <img src="https://cdn.cooluc.com/r4s/select_firmware.png" />
+  
+  
+  
+  **② 点击 “执行”（固件写入完成后会自动重启进入 OpenWrt 系统）**
+  
+  
+  
+- ***注意：通过电脑烧写固件请使用本站下载的 [瑞芯微开发工具](https://git.kejizero.online/zhao/files/raw/branch/main/RKDevTool_Release_v2.84.zip)。***
+
+------
+
+## 固件烧写（SD to eMMC）
+
+```shell
+# 1、下载最新 Releases 固件并通过 SD 卡启动
+# 2、使用 Xftp 等工具上传一份固件到 /tmp 目录，或通过终端 wget 在线下载固件到 /tmp 目录
+
+# 3、使用内建命令写入固件到 eMMC 存储（请根据实际文件名称与路径）
+
+emmc-install /tmp/xx-squashfs-sysupgrade.img.gz
+
+```
+
+**固件写入完成后，取下 SD 卡，手动断电重启即可完成。**
+
+------
+
 ## 📂 固件展示 / 预览截图
 
 <div align="center">
