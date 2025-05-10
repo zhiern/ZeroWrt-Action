@@ -8,19 +8,6 @@
 
 ---
 
-## 📂 固件展示 / 预览截图
-
-<div align="center">
-
-![示例图 1](https://git.kejizero.online/zhao/files/raw/branch/main/images/0001.png)  
-![示例图 2](https://git.kejizero.online/zhao/files/raw/branch/main/images/0002.png)  
-![示例图 3](https://git.kejizero.online/zhao/files/raw/branch/main/images/0003.png)  
-![示例图 4](https://git.kejizero.online/zhao/files/raw/branch/main/images/0004.png)
-
-</div>
-
----
-
 ## 🔍 固件信息概览
 
 - 🛠 **源码基础**：[OpenWrt 官方]
@@ -43,6 +30,19 @@
 - 🎛 **功能优化**：
   - 内置 ZeroWrt 设置菜单，轻松管理
   - 支持高级插件、自定义启动项
+
+---
+
+## 📂 固件展示 / 预览截图
+
+<div align="center">
+
+![示例图 1](https://git.kejizero.online/zhao/files/raw/branch/main/images/0001.png)  
+![示例图 2](https://git.kejizero.online/zhao/files/raw/branch/main/images/0002.png)  
+![示例图 3](https://git.kejizero.online/zhao/files/raw/branch/main/images/0003.png)  
+![示例图 4](https://git.kejizero.online/zhao/files/raw/branch/main/images/0004.png)
+
+</div>
 
 ---
 
