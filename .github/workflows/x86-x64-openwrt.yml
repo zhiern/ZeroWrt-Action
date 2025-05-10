@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: Build releases
+name: x86-x64-openwrt-24.10
 
 on:
   workflow_dispatch:
@@ -15,20 +15,6 @@ on:
   # watch:
   #   types: started
     inputs:
-      device:
-        description: 'Select the build device'
-        required: true
-        default: 'x86_64'
-        type: choice
-        options:
-          - 'armv8'
-          - 'x86_64'
-          - 'rockchip'
-      lan_addr:
-        description: 'Setting default LAN address'
-        required: true
-        default: '10.0.0.1'
-        type: string
       ccache:
         description: 'Enable ccache (Use Cache to speed up next build)'
         type: boolean
