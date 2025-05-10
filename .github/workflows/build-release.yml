@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: x86-x64-openwrt-24.10
+name: Build releases
 
 on:
   workflow_dispatch:
@@ -41,7 +41,7 @@ env:
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
-  FIRMWARE_TAG: OpenWrt-24.10
+  FIRMWARE_TAG: OpenWrt-24.10-${{ github.event.inputs.device }}
   TZ: Asia/Shanghai
   
 jobs:
