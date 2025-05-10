@@ -432,13 +432,6 @@ curl -s https://downloads.openwrt.org/releases/24.10.1/targets/x86/64/openwrt-24
 | sed -n 's/.*~\([a-f0-9]\+\)-r[0-9]\+/\1/p' > vermagic
 sed -i 's#grep '\''=\[ym\]'\'' \$(LINUX_DIR)/\.config\.set | LC_ALL=C sort | \$(MKHASH) md5 > \$(LINUX_DIR)/\.vermagic#cp \$(TOPDIR)/vermagic \$(LINUX_DIR)/.vermagic#g' include/kernel-defaults.mk
 
-# 进行一些处理
-git clone -b openwrt-24.10 --single-branch --filter=blob:none https://github.com/openwrt/openwrt openwrt_snap
-find ./package/* -maxdepth 0 ! -name 'firmware' ! -name 'kernel' ! -name 'base-files' ! -name 'Makefile' -exec rm -rf {} +
-rm -rf ./openwrt_snap/package/firmware ./openwrt_snap/package/kernel ./openwrt_snap/package/base-files ./openwrt_snap/package/Makefile
-cp -rf ./openwrt_snap/package/* ./package/
-cp -rf ./openwrt_snap/feeds.conf.default ./feeds.conf.default
-
 # Toolchain Cache
 if [ "$BUILD_FAST" = "y" ]; then
     TOOLCHAIN_URL=https://github.com/oppen321/openwrt_caches/releases/download/OpenWrt_Toolchain_Cache
